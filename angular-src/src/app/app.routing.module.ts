@@ -11,6 +11,8 @@ import { RevenueComponent } from './components/revenue-component/revenue.compone
 import { BudgetComponent } from "./components/budget-component/budget.component";
 
 import { ReleaseChartComponent } from './components/release-chart/release-chart.component';
+import { KidFriendlyComponent } from './components/kid-friendly-component/kid-friendly-component.component';
+
 import { RunTimeChartComponent } from './components/run-time-chart/run-time-chart.component';
 
 
@@ -49,6 +51,10 @@ const routes: Route[] = [{
     component: RunTimeChartComponent
 },
 {
+    path: 'kid-friendly',
+    component: KidFriendlyComponent
+},
+{
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
@@ -71,6 +77,6 @@ const routes: Route[] = [{
 
 export class AppRoutingModule {}
 
-export const RoutingComponents = [HomeComponent, AdvSearchComponent, ErrorComponent, ResultComponent, 
+export const RoutingComponents = [HomeComponent, AdvSearchComponent, ErrorComponent, ResultComponent, KidFriendlyComponent,
                                   ModalComponent, ResultsTableComponent, RevenueComponent, BudgetComponent, ReleaseChartComponent];
 
